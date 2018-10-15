@@ -4,40 +4,64 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: #555;   
+    
+}
+
+a{color:#009;    
 }
 
 html{
         font-size: 16px;
         margin-top: 3em;
+        background-color:#ddd;
+        
 
 }
 
 h1,h2,h3{
-    color: #666;
+    color: #555;
 }
-
-header, 
-main,
+ 
+main{
+    margin: 3em;    
+    max-width: 100%;
+    background-color: #ddd;
+}
 footer{
     margin: 0 auto;    
-    max-width: 800px;
-
+    max-width: 100%;
 }
-
 
 
 header{
-        padding: 2em 0;
+        padding:3em;
+        margin: 0;
+        text-align-last: left;
+        background-image: url(./images/aspenTrees.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
 
 }
+
+header img{
+    border: 1px solid #222;
+
+}   
+
+
 header h1{
     font-size: 3em;
+    color: #fff;
 }
+
+
 header span{
             font-size: 1.5em;
-            color:#999;
+            color:#555;
 
 }
+
 
 nav{
     position: fixed;
@@ -45,26 +69,29 @@ nav{
     left:0;
     width:100%;
     display: flex;
-    flex-flow: row;
-    justify-content: center;
-    background: #330033;
+    flex-flow: row-reverse;
+    justify-content:left;
+    background: #333;
+    margin-bottom: 0;
 
 }
 
 nav a {
     padding: .5em 2em;
     text-decoration: none;
-    color:#fff;
+    color:#ddce00;
     
 }
 nav a:hover{
-    background: #666;
+    background: #ddce00;
+    color: #222;
 }
 
 section{
     margin: 1em 0;
     padding-top: 3em;
     min-height: 20em;
+    
 }
 
 section > p {
@@ -93,12 +120,15 @@ section ul{
 
 
 footer{
+    max-width: width 800px;
     margin-top:2em;
     margin-bottom: 1em;
-    background: #330033;
-    color: #fff; 
+    background: #222;
+    color: #ddce00; 
     padding: 1em 0;
     text-align: center;
+   
+   
 }
 
 
