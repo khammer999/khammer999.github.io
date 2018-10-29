@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
         <title>Ken Hammer-Professional Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./portfolioJS1Style.css">
 
 </head>
 <body>
@@ -35,20 +39,49 @@
                 Transactional Databases / MS SQL • Source Control / GitHub</p>
                 <section id="contact">
                         <h2>Get In Touch</h2>
-                        <p>I would be happy to discuss how I can help meet your information technology needs!</p>
+                        <p>I would be happy to discuss <span id="modal-trigger" class="live">how</span> I can help meet your information technology needs!</p>
                         <ul>
                             <li>Email: khammer999@gmail.com</li>
                             <li>Phone: (440) 570-1018</li>
+                            <!-- <span id="modal-trigger" class="live">Ken on GitHub</span> -->
                             <li><a href="https://github.com/khammer999/khammer999.github.io">Ken on GitHub</a></li>
                             <li><a href="https://www.linkedin.com/in/ken-hammer-216b2b171/">Ken on LinkedIn</a></li>            
             
                         </ul>
                     </section>
+        </section>
+        <section id="Events">
+            <h2>Events</h2>
+            <p>This section contains and image carousel </p>
+            <div id="slider">
+                <div id="slider-frame">
+                  
+                  <div id="slider-prev">PREV</div>
+                  <div id="slider-next">NEXT</div>
+      
+                  <div id="slider-images">
+                    <div data-src="./images/bankAcctScreenShot.jpg">
+                      Let's boot up your new project.
+                    </div>
+                    <div data-src="./images/reviewsScreenShot.jpg">
+                      You'll want to double-click this one.
+                    </div>
+                    <div data-src="./images/codeBusinessScreenShot.jpg">
+                      Code Business is cool.
+                    </div>
+                  </div>
+      
+                </div>
+                <div id="slider-caption">
+                  The caption.
+                </div>
+              </div>
 
 
 
 
         </section>
+
         <section id="Projects">
            <h2>Projects</h2>
             <p>This section contains project examples from my work at WeCanCodeIT bootcamp September
@@ -57,33 +90,47 @@
                 <div id="projects">
                     <article>
                         <h3>Bank Account</h3>
-                        <image src="./images/bankAcctScreenShot.jpg">
-                        <a href="https://github.com/khammer999/BankAccount.git">Click to view...</a>
-                        <p>Example of back end console application using C#.</p>
+                        <image src="./images/bankAcctScreenShot.jpg">    
+                        <!--<a href="https://github.com/khammer999/BankAccount.git">Click to view...</a>
+                         <details>
+                            <summary>Description</summary>-->
+                        <button class="collapsible">Description</button>
+                            <div class="content">
+                             <p>Example of back end console application using C#.</p>
+                            </div>   
                     </article>
                     <article>
                         <h3>Review Repository</h3>
                         <image src="./images/reviewsScreenShot.jpg">
-                        <a href="https://github.com/khammer999/Reviews.git">Click to view...</a>
-                        <p>Example of front end application using C#, 
-                           generated from MVC, developed using Test Driven Design (TDD)</p>
+                        <!-- <a href="https://github.com/khammer999/Reviews.git">Click to view...</a>
+                        <details>
+                            <summary>Description</summary> -->
+
+                            <button class="collapsible">Description</button>
+                                <div class="content">
+                                    <p>Example of front end application using C#, 
+                                        generated from MVC, developed using Test Driven Design (TDD)
+                                    </p>
+                                </div>
                     </article>
                     <article>
                         <h3>Code Business</h3>
                         <image src="./images/codeBusinessScreenShot.jpg">
-                        <a href="https://github.com/khammer999/CodeBusinessBridgeProject.git">Click to view...</a>
-                        <p>Example of front end application using HTML, and CSS.</p>
+                       <!-- <a href="https://github.com/khammer999/CodeBusinessBridgeProject.git">Click to view...</a> -->
+                       <button class="collapsible">Description</button>
+                       <div class="content">
+                         <p>Example of front end application using HTML, and CSS.</p>
+                       </div>
                     </article>
 
 
                 </div>
-
-
         </section>
         
     </Main>
 
     <nav>
+          
           <a href="#aboutMe">About Ken</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
@@ -95,7 +142,7 @@
         &copy; 2018 all rights reserved
         
     </footer>
-
+    <script src="./scriptJS1Style.js"></script>
 </body>
 
 </html>
